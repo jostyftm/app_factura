@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
@@ -24,12 +24,36 @@ const routes: Routes = [
     loadChildren: () => import('./pages/dashboard/invoices/invoices.module').then( m => m.InvoicesPageModule)
   },
   {
-    path: 'products',
-    loadChildren: () => import('./pages/dashboard/products/products.module').then( m => m.ProductsPageModule)
+    path: 'categorias_listar',
+    loadChildren: () => import('./pages/dashboard/categorias/listar/listar.module').then( m => m.ListarPageModule)
   },
   {
-    path: 'categories',
-    loadChildren: () => import('./pages/dashboard/categories/categories.module').then( m => m.CategoriesPageModule)
+    path: 'categorias_crear',
+    loadChildren: () => import('./pages/dashboard/categorias/crear/crear.module').then( m => m.CrearPageModule)
+  },
+  {
+    path: 'categorias_editar',
+    loadChildren: () => import('./pages/dashboard/categorias/editar/editar.module').then( m => m.EditarPageModule)
+  },
+  {
+    path: 'productos_crear',
+    loadChildren: () => import('./pages/dashboard/productos/crear/crear.module').then( m => m.CrearPageModule)
+  },
+  {
+    path: 'productos_listar',
+    loadChildren: () => import('./pages/dashboard/productos/listar/listar.module').then( m => m.ListarPageModule)
+  },
+  {
+    path: 'productos_editar',
+    loadChildren: () => import('./pages/dashboard/productos/editar/editar.module').then( m => m.EditarPageModule)
+  },
+  {
+    path: 'agregar_caracteristica',
+    loadChildren: () => import('./pages/dashboard/productos/agregar-caracteristica/agregar-caracteristica.module').then( m => m.AgregarCaracteristicaPageModule)
+  },
+  {
+    path: 'agregar_venta',
+    loadChildren: () => import('./pages/dashboard/ventas/agregar-venta/agregar-venta.module').then( m => m.AgregarVentaPageModule)
   },
 ];
 

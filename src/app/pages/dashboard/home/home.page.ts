@@ -15,17 +15,17 @@ export class HomePage implements OnInit {
     },
     {
       label: "Categorias",
-      to: "/categories",
+      to: "/categorias_listar",
       icon: "people-outline"
     },
     {
       label: "Productos",
-      to: "/products",
+      to: "/productos_listar",
       icon: "fast-food-outline"
     },
     {
-      label: "Facturas  ",
-      to: "/invoices",
+      label: "Ventas  ",
+      to: "/agregar_venta",
       icon: "document-outline"
     },
   ];

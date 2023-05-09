@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="productos_listar"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Nueva Producto</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Nombre producto</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button 
+          type="submit" 
+          color="primary" 
+          expand="block"
+          [routerLink]="['/productos_editar/1']"
+        >
+          Crear producto
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="productos_editar/1"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Agregar Caracteristica</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-text class="ion-text-center">
+    <h1>Producto 1</h1>
+  </ion-text>
+  <form>
+    <ion-item>
+      <ion-label position="floating">Talla</ion-label>
+      <ion-select aria-label="Tallas" interface="action-sheet" placeholder="Selecciona">
+        <ion-select-option value="s">S</ion-select-option>
+        <ion-select-option value="m">M</ion-select-option>
+        <ion-select-option value="l">L</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Color</ion-label>
+      <ion-select aria-label="Tallas" interface="action-sheet" placeholder="Selecciona">
+        <ion-select-option value="white">Blanco</ion-select-option>
+        <ion-select-option value="blue">Azul</ion-select-option>
+        <ion-select-option value="black">Negro</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Cantidad</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button 
+          color="primary" 
+          expand="block"
+          type="submit"
+        >
+          Agregar caracteristica
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

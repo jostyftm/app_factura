@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="home"></ion-back-button>
+      <ion-back-button defaultHref="dashboard/home"></ion-back-button>
     </ion-buttons>
     <ion-title>Categorias</ion-title>
   </ion-toolbar>
@@ -11,7 +11,7 @@
   <ion-list>
     <ion-list-header>
       <ion-label></ion-label>
-      <ion-button >Nueva categoria</ion-button>
+      <ion-button [routerLink]="['/categoria_agregar']">Nueva categoria</ion-button>
     </ion-list-header>
     <ion-item 
         button 

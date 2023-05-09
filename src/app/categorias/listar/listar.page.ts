@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ICategory } from 'src/app/interfaces/ICategory';
 
 @Component({
-  selector: 'app-categories',
-  templateUrl: './categories.page.html',
-  styleUrls: ['./categories.page.scss'],
+  selector: 'app-listar',
+  templateUrl: './listar.page.html',
+  styleUrls: ['./listar.page.scss'],
 })
-export class CategoriesPage implements OnInit {
+export class ListarPage implements OnInit {
 
   categories: ICategory[] = [
     {
