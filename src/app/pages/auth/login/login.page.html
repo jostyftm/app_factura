@@ -5,17 +5,17 @@
 		<ion-card-content>
 			<ion-item>
 				<ion-icon name="mail-outline" class="ion-margin-end"></ion-icon>
-				<ion-input name="usernmae" type="text" placeholder="usuario@mail.com"></ion-input>
+				<ion-input name="usernmae" type="text" [(ngModel)]="email" placeholder="usuario@mail.com"></ion-input>
 			</ion-item>
 			<ion-item class="ion-margin-top">
 				<ion-icon name="lock-closed-outline" class="ion-margin-end"></ion-icon>
-				<ion-input name="usernmae" type="password" placeholder="*****"></ion-input>
+				<ion-input name="usernmae" type="password" [(ngModel)]="password" placeholder="*****"></ion-input>
 			</ion-item>
 			<div class="ion-margin-top">
 				<ion-button 
 					expand="block" 
 					fill="solid"
-					[routerLink]="['/dashboard/home']"
+					(click)="handleLogin()"
 				>
 					Ingresar
 				</ion-button>
